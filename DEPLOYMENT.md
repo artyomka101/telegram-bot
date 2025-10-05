@@ -61,7 +61,46 @@ heroku ps:scale web=1
 - `BOT_TOKEN` = ваш токен бота
 - `ADMIN_USER_ID` = ваш Telegram ID (опционально)
 
-### 3. Render
+### 3. Scalingo (рекомендуется для Европы)
+
+#### Шаг 1: Подготовка
+1. Зарегистрируйтесь на [scalingo.com](https://scalingo.com)
+2. Установите [Scalingo CLI](https://cli.scalingo.com/)
+3. Войдите в аккаунт: `scalingo login`
+
+#### Шаг 2: Создание приложения
+```bash
+# Создание приложения
+scalingo create telegram-bot
+
+# Подключение к GitHub (опционально)
+scalingo --app telegram-bot git-setup
+```
+
+#### Шаг 3: Переменные окружения
+```bash
+# Установка токена бота
+scalingo --app telegram-bot env-set BOT_TOKEN=your_actual_bot_token
+
+# Установка ID администратора (опционально)
+scalingo --app telegram-bot env-set ADMIN_USER_ID=your_telegram_user_id
+```
+
+#### Шаг 4: Развертывание
+```bash
+# Если подключен Git
+git push scalingo main
+
+# Или через CLI
+scalingo --app telegram-bot deploy
+```
+
+#### Шаг 5: Запуск
+```bash
+scalingo --app telegram-bot scale web:1:S
+```
+
+### 4. Render
 
 #### Шаг 1: Подготовка
 1. Зарегистрируйтесь на [render.com](https://render.com)
@@ -107,6 +146,18 @@ heroku ps
 ### Railway
 - Логи доступны в веб-интерфейсе
 - Автоматическое перезапуск при сбоях
+
+### Scalingo
+```bash
+# Просмотр логов
+scalingo --app telegram-bot logs
+
+# Статус приложения
+scalingo --app telegram-bot status
+
+# Перезапуск приложения
+scalingo --app telegram-bot restart
+```
 
 ### Render
 - Логи доступны в веб-интерфейсе
