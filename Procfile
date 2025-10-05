@@ -1,2 +1,2 @@
-web: python minimal_bot.py
+web: python app.py
 
