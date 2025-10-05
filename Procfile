@@ -1,2 +1,2 @@
-web: python simple_bot.py
+web: python minimal_bot.py
 
