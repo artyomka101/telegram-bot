@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "key": "rus",
+      "name": "Русский язык",
+      "homework": "123"
+    },
+    {
+      "key": "eng",
+      "name": "Английский язык",
+      "homework": "Выучить слова unit 3, упр. 5"
+    },
+    {
+      "key": "cs",
+      "name": "Информатика",
+      "homework": "Подготовить файл с алгоритмом сортировки"
+    },
+    {
+      "key": "phys",
+      "name": "Физика",
+      "homework": "Задачи на законы Ньютона"
+    },
+    {
+      "key": "chem",
+      "name": "Химия",
+      "homework": "§8, упр. после параграфа"
+    },
+    {
+      "key": "bio",
+      "name": "Биология",
+      "homework": "Опорный конспект по теме клетки"
+    },
+    {
+      "key": "lit",
+      "name": "Литература",
+      "homework": "Прочитать главу 4, краткий пересказ"
+    },
+    {
+      "key": "geo",
+      "name": "География",
+      "homework": "Карта: обозначить материки и океаны"
+    },
+    {
+      "key": "algebra_i_nachala_matematicheskogo_analiza",
+      "name": "Алгебра и начала математического анализа",
+      "homework": ""
+    },
+    {
+      "key": "fizkultura",
+      "name": "Физкультура",
+      "homework": ""
+    },
+    {
+      "key": "veroyatnost_i_statistika",
+      "name": "Вероятность и статистика",
+      "homework": ""
+    },
+    {
+      "key": "geometriya",
+      "name": "Геометрия",
+      "homework": ""
+    },
+    {
+      "key": "individualnyy_proekt",
+      "name": "Индивидуальный проект",
+      "homework": ""
+    },
+    {
+      "key": "istoriya",
+      "name": "История",
+      "homework": ""
+    },
+    {
+      "key": "obschestvoznanie",
+      "name": "Обществознание",
+      "homework": ""
+    },
+    {
+      "key": "obzr",
+      "name": "ОБЗР",
+      "homework": ""
+    },
+    {
+      "key": "razgovory_o_v",
+      "name": "Разговоры О/В",
+      "homework": ""
+    },
+    {
+      "key": "net_uroka",
+      "name": "Нет урока",
+      "homework": ""
+    }
+  ],
+  "schedule": {
+    "mon": [
+      "razgovory_o_v",
+      "rus",
+      "lit",
+      "obschestvoznanie",
+      "geometriya",
+      "veroyatnost_i_statistika",
+      "obzr"
+    ],
+    "tue": [
+      "net_uroka",
+      "istoriya",
+      "eng",
+      "obschestvoznanie",
+      "phys",
+      "bio",
+      "algebra_i_nachala_matematicheskogo_analiza",
+      "fizkultura"
+    ],
+    "wed": [
+      "geometriya",
+      "geometriya",
+      "rus",
+      "lit",
+      "eng",
+      "cs",
+      "individualnyy_proekt"
+    ],
+    "thu": [
+      "obschestvoznanie",
+      "fizkultura",
+      "eng",
+      "istoriya",
+      "geo",
+      "algebra_i_nachala_matematicheskogo_analiza",
+      "algebra_i_nachala_matematicheskogo_analiza"
+    ],
+    "fri": [
+      "net_uroka",
+      "phys",
+      "obschestvoznanie",
+      "algebra_i_nachala_matematicheskogo_analiza",
+      "lit",
+      "chem"
+    ]
+  }
+}

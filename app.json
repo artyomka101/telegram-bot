@@ -1,0 +1,29 @@
+{
+  "name": "Telegram Bot",
+  "description": "Telegram bot for homework and schedule management",
+  "repository": "https://github.com/yourusername/your-repo-name",
+  "logo": "https://telegram.org/img/t_logo.png",
+  "keywords": ["telegram", "bot", "python", "homework", "schedule"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram bot token from @BotFather",
+      "required": true
+    },
+    "ADMIN_USER_ID": {
+      "description": "Your Telegram user ID (optional)",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
+
